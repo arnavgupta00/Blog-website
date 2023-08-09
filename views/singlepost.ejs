@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&family=Poppins:wght@700&family=Satisfy&family=Tektur:wght@800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        :root {
+            --bg: #35155D;
+            --bg_s: #512B81;
+            --text: #4477CE;
+        }
+
+        * {
+            margin: 0%;
+        }
+
+        html {
+            background-color: var(--bg);
+        }
+
+        h1 {
+            margin: 1vw;
+            font-family: 'Oswald', sans-serif;
+            color: var(--text);
+
+        }
+
+        p {
+            margin: 1vw;
+            font-family: Verdana, sans-serif;
+            color: var(--text);
+        }
+
+        /*NAVBAR*/
+
+        .navbar {
+            display: flex;
+            background-color: var(--bg_s);
+            color: var(--text);
+            width: 98.7vw;
+            height: 10vh;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+
+        .home {
+            margin-right: 80vw;
+        }
+
+        .button_t {
+            background-color: transparent;
+            border: transparent;
+            font-size: 1.5rem;
+            font-family: 'Bebas Neue', sans-serif;
+            color: var(--text);
+
+        }
+
+        .clicked {
+            opacity: 0.5;
+        }
+
+        /*NAVBAR OVER*/
+        
+        
+    </style>
+
+    <div class="navbar">
+        <button onclick='window.open("/" ) ' class="button_t home">BLOG WEBSITE</button>
+        <button onclick='window.open("https://github.com/arnavgupta00" ,"blank") ' class="button_t">About</button>
+        <button onclick='window.open("https://github.com/arnavgupta00" ,"blank") ' class="button_t">Contact</button>
+    </div>
+    <div class="singlePost">
+
+        <h1>
+            <%= datas.title %>
+        </h1>
+        <p>
+            <%= datas.content %>
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
